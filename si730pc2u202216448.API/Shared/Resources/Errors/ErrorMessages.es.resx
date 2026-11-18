@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <data name="GenericError" xml:space="preserve">
+    <value>Ocurrió un error.</value>
+  </data>
+    <data name="OperationCancelled" xml:space="preserve">
+    <value>La operación fue cancelada.</value>
+  </data>
+    <data name="HeroesError.HeroNotFound" xml:space="preserve">
+    <value>Héroe no encontrado.</value>
+  </data>
+    <data name="HeroesError.DuplicateHero" xml:space="preserve">
+    <value>Ya existe un héroe con el mismo id de héroe registrado en el mismo lugar, país y continente.</value>
+  </data>
+    <data name="HeroesError.InvalidHeroId" xml:space="preserve">
+    <value>El id del héroe debe ser mayor que cero.</value>
+  </data>
+    <data name="HeroesError.InvalidRegisterEmailAddress" xml:space="preserve">
+    <value>El correo de registro debe ser un correo válido, no vacío y de hasta 50 caracteres.</value>
+  </data>
+    <data name="HeroesError.InvalidHeroPlace" xml:space="preserve">
+    <value>El lugar del héroe no debe estar vacío ni exceder 50 caracteres.</value>
+  </data>
+    <data name="HeroesError.InvalidHeroCountry" xml:space="preserve">
+    <value>El país del héroe no debe estar vacío ni exceder 250 caracteres.</value>
+  </data>
+    <data name="HeroesError.InvalidHeroContinent" xml:space="preserve">
+    <value>El continente del héroe es obligatorio y debe ser AMERICAN, EUROPE, AFRICA, ASIA u OCEANIA.</value>
+  </data>
+    <data name="HeroesError.InvalidHeroAbility" xml:space="preserve">
+    <value>La habilidad del héroe no debe estar vacía ni exceder 50 caracteres.</value>
+  </data>
+    <data name="HeroesError.OperationCancelled" xml:space="preserve">
+    <value>La operación de héroe fue cancelada.</value>
+  </data>
+    <data name="HeroesError.DatabaseError" xml:space="preserve">
+    <value>Ocurrió un error de base de datos durante la operación de héroe.</value>
+  </data>
+    <data name="HeroesError.InternalServerError" xml:space="preserve">
+    <value>Ocurrió un error interno inesperado en Héroes.</value>
+  </data>
+</root>
