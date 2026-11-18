@@ -1,3 +1,7 @@
+using si730pc2u202216448.API.Heroes.Application.CommandServices;
+using si730pc2u202216448.API.Heroes.Application.Internal.CommandServices;
+using si730pc2u202216448.API.Heroes.Domain.Repositories;
+using si730pc2u202216448.API.Heroes.Infrastructure.Persistence.EntityFrameworkCore.Repositories;
 using si730pc2u202216448.API.Resources.Errors;
 using si730pc2u202216448.API.Resources.Shared;
 using si730pc2u202216448.API.Shared.Domain.Repositories;
@@ -67,6 +71,9 @@ builder.Services.AddOpenApi();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<DispatchDomainEventsInterceptor>();
 
+// Heroes Bounded Context
+builder.Services.AddScoped<IHeroRepository, HeroRepository>();
+builder.Services.AddScoped<IHeroCommandService, HeroCommandService>();
 
 // Mediator Configuration
 
