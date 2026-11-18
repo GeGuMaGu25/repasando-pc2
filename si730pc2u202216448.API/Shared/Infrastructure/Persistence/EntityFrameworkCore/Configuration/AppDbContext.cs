@@ -1,3 +1,4 @@
+using si730pc2u202216448.API.Heroes.Infrastructure.Persistence.EntityFrameworkCore.Configuration.Extensions;
 using si730pc2u202216448.API.Shared.Infrastructure.Persistence.EntityFrameworkCore.Configuration.Extensions;
 using si730pc2u202216448.API.Shared.Infrastructure.Persistence.EntityFrameworkCore.Interceptors;
 using Microsoft.EntityFrameworkCore;
@@ -36,6 +37,8 @@ public class AppDbContext(DbContextOptions options) : DbContext(options)
     {
         base.OnModelCreating(builder);
 
+        // Heroes Context
+        builder.ApplyHeroesConfiguration();
 
         // General Naming Convention for the database objects
         builder.UseSnakeCaseNamingConvention();
